@@ -161,13 +161,89 @@ const lessonPlans = {
 - Confidence (1-10):`
       }
     ]
+  },
+
+  week3: {
+    name: "Application Patterns & Real-World UI",
+    days: [
+      {
+        day: "Day 1",
+        focus: "State Composition & Multiple UI Concerns",
+        exercises: [
+          "Manage more than one piece of state in App",
+          "Combine active selection with filters",
+          "Reason about which component owns which state"
+        ],
+        readmePrompt: `# Day 1
+- What state exists and why:
+- How multiple states interact:
+- What felt harder than Week 2:
+- Confidence (1-10):`
+      },
+      {
+        day: "Day 2",
+        focus: "UI Edge Cases & Defensive Rendering",
+        exercises: [
+          "Handle empty states gracefully",
+          "Prevent undefined or null rendering bugs",
+          "Use conditional rendering intentionally"
+        ],
+        readmePrompt: `# Day 2
+- Edge cases handled:
+- What broke before fixing:
+- How I reasoned through it:
+- Confidence (1-10):`
+      },
+      {
+        day: "Day 3",
+        focus: "Component Responsibility & Refactoring",
+        exercises: [
+          "Refactor logic into clearer components",
+          "Rename props and handlers for clarity",
+          "Reduce unnecessary props"
+        ],
+        readmePrompt: `# Day 3
+- Before vs after structure:
+- What responsibilities moved:
+- What became clearer:
+- Confidence (1-10):`
+      },
+      {
+        day: "Day 4",
+        focus: "Explaining Code Like a Developer",
+        exercises: [
+          "Explain state flow without code",
+          "Explain one component’s responsibility",
+          "Practice answering 'why did you do it this way?'"
+        ],
+        readmePrompt: `# Day 4
+- My explanation in plain English:
+- What I struggled to explain:
+- What I want to improve:
+- Confidence (1-10):`
+      },
+      {
+        day: "Day 5",
+        focus: "Mini Project Integration & Review",
+        exercises: [
+          "Build a small feature from scratch",
+          "Reuse Button, filters, and derived data",
+          "Review patterns learned across all weeks"
+        ],
+        readmePrompt: `# Day 5
+- Feature I built:
+- Patterns reused:
+- What now feels automatic:
+- Confidence (1-10):`
+      }
+    ]
   }
 };
 
 /**
  * Utility: Print a specific day from a specific week
  * Example:
- * printDayPlan("week2", "Day 1")
+ * printDayPlan("week3", "Day 1")
  */
 function printDayPlan(weekKey, dayName) {
   const week = lessonPlans[weekKey];
@@ -190,6 +266,4 @@ function printDayPlan(weekKey, dayName) {
 }
 
 // Example usage:
-// printDayPlan("week2", "Day 1");
-
-printDayPlan("week2", "Day 1")
+printDayPlan("week3", "Day 2");
